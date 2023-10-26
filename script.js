@@ -222,7 +222,7 @@ const handleUserChoice = (choice) => {
   chatbox.querySelectorAll(".options-container").forEach((container) => {
     container.style.display = "none"; // Hide options containers
   });
-  const userChoiceMessage = createChatLi(`User Selected:${choice}`, "outgoing");
+  const userChoiceMessage = createChatLi(`${choice}`, "outgoing");
   chatbox.appendChild(userChoiceMessage);
   sendBotResponse(choice); // Send the user's choice to the bot
 };
